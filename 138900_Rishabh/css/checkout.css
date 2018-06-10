@@ -1,0 +1,142 @@
+.align-horizontal {
+    display: flex;
+}
+
+.checkout-container {
+    margin-top: 5%;
+}
+
+.checkout-container .content{
+    padding-bottom: 20px;
+}
+
+.help-container {
+    margin-top: 60px;
+}
+
+.subtotal-container .row:first-of-type {
+    padding-bottom: 30px;
+    border-bottom: 5px solid #cccccc;
+}
+
+.subtotal-container .row:last-of-type {
+
+    border-bottom: 2px solid #cccccc;
+}
+
+.subtotal-container h3 {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    align-items: baseline;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+
+
+.row:first-child {
+    display: flex;
+    width: 100%;
+    align-items: baseline;
+    margin-top: 20px;
+
+}
+
+
+.row:last-child {
+    display: flex;
+    width: 100%;
+    align-items: baseline;
+    margin-top: 0px;
+}
+
+.align-horizontal {
+    display: flex;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.padding {
+    padding: 5px;
+}
+
+.coupon-input {
+    min-height: 35px;
+    width: 60%;
+    border: 0.5px solid #cccccc;
+    margin-right: 15px;
+    padding: 1px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.coupon-btn {
+    height: 35px;
+    width: 30%;
+    border: 0.5px solid #838383;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+    display: inline-block;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.checkout-btn {
+    display: inline-block;
+    margin-left: 20px;
+    width: 150px;
+}
+
+.btn {
+    height: 50px;
+    width: 200px;
+    border: none;
+    text-decoration-color: white;
+    background-color: #0066cc;
+    color: white;
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.continue-container{
+    margin-top: 20px;
+}
+.continue-shopping,
+.continue-shopping a:active,
+.continue-shopping a:visited {
+    font-family: 'Fira Sans', sans-serif;
+    //    text-decoration: none;
+}
+
+.total-container {
+    margin-top: 5px;
+    padding-bottom: 20px;
+    border-bottom: 5px solid #cccccc;
+}
+
+
+.light-font {
+    font-weight: 200;
+    color: #9b9b9b;
+    font-size: 17px;
+    letter-spacing: 0.65px;
+}
+
+.small-font {
+    font-size: 16px;
+}
+
+.auto-margin {
+    margin: 0 auto;
+}

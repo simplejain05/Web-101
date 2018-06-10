@@ -1,0 +1,99 @@
+{
+  "0": {
+    "id": 4,
+    "name": "SOLID GREEN COTTON TSHIRT",
+    "style": "#MS13KT1",
+    "colors": [
+      {
+        "colorName": "yellow",
+        "colorHashCode": "#fff96d"
+      },
+      {
+        "colorName": "blue",
+        "colorHashCode": "#387aff"
+      }
+    ],
+    "allsizes": {
+      "availableSizes": [
+        "S",
+        "XXL"
+      ]
+    },
+    "qty": 2,
+    "price": 11,
+    "imgsrc": "/img/shirt.png"
+  },
+  
+  "1": {
+    "id": 3,
+    "name": "PINK RAINBOW PRINT GIRLS TEE",
+    "style": "#MS13KT1",
+    "colors": [
+      {
+        "colorName": "pink",
+        "colorHashCode": "#ffc6e7"
+      },
+      {
+        "colorName": "gray",
+        "colorHashCode": "#adadad"
+      }
+    ],
+    "allsizes": {
+      "availableSizes": [
+        "S",
+        "L",
+        "XL",
+        "XXL"
+      ]
+    },
+    "qty": 2,
+    "price": 30,
+    "imgsrc": "/img/pinkshirt.png"
+  },
+  
+  "2": {
+    "id": 2,
+    "name": "TEEN ROCK JEANS",
+    "style": "#MS13KT1",
+    "colors": [
+      {
+        "colorName": "yellow",
+        "colorHashCode": "#fff96d"
+      }
+    ],
+    "allsizes": {
+      "availableSizes": [
+        "S",
+        "L",
+        "XL",
+        "XXL"
+      ]
+    },
+    "qty": 2,
+    "price": 30,
+    "imgsrc": "img/yellowjeans.png"
+  },
+  
+ "3": {
+    "id": 1,
+    "name": "TEEN ROCK BLUE JEANS",
+    "style": "#MS13KT1",
+    "colors": [
+      {
+        "colorName": "blue",
+        "colorHashCode": "#387aff"
+      }
+    ],
+    "allsizes": {
+      "availableSizes": [
+        "S",
+        "L",
+        "XL",
+        "XXL"
+      ]
+    },
+    "qty": 2,
+    "price": 35,
+    "imgsrc": "img/blue.png"
+  }
+}

@@ -1,0 +1,131 @@
+.overlay {
+    margin: 10px;
+}
+
+.white-bg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    height: 600px;
+    margin-top: -300px;
+    margin-left: -35%;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+.white-bg .item-row {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.black-bg {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #555555;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+}
+
+.block {
+    display: block;
+}
+
+.center {
+    text-align: center;
+}
+
+.overlay .item-row {
+    margin-left: 10px;
+    padding: 0px;
+    margin-right: 10px;
+}
+
+.color-box {
+    display: inline-block;
+    border: 1px solid #656565;
+    height: 15px;
+    width: 25px;
+    -webkit-appearance: none;
+}
+
+.color-box:checked {
+    transform: scaleX(1.25);
+    transform: scaleY(1.25);
+}
+
+.item-overlay-desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-height: 100%;
+}
+
+.overlay .item-name {
+    margin-top: 5%;
+    border-top: 5px solid #cccccc;
+    padding: 25px;
+}
+
+.overlay .item-name h3 {
+    color: #adadad;
+    font-weight: 400;
+}
+
+.overlay .item-name h2 {
+    font-size: 70px;
+    font-weight: 500;
+}
+
+.overlay .item-name h2 sup {
+    font-size: 22px;
+
+}
+
+.overlay .item-color {}
+
+.overlay .item-size {
+    width: 85px;
+    height: 40px;
+
+}
+
+.close-overlay{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 10px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.overlay .item-qty {
+    width: 85px;
+    height: 40px;
+}
+
+.overlay h4 {
+    font-weight: 400;
+    letter-spacing: .5px;
+}
+
+.margin-btm {
+    margin-bottom: 10%;
+}
+
+.item-row section {}
+
+.item-row .enlarged-img img {
+    overflow: hidden;
+    max-width: 100%;
+    min-width: 150px;
+}
+
+.color-filter * {
+    margin-top: 10px;
+}

@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #676666;
+}
+
+body {
+    width: 100%;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.items-container {
+    max-width: 100%;
+    min-height: 100px;
+    margin: 0 auto;
+    border-top: 5px solid #cccccc;
+    border-bottom: 5px solid #cccccc;
+}
+
+.items-container .item-row {
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 20px;
+    padding-top: 10px;
+
+}
+
+.items-container .row {
+    margin-top: 0px !important;
+    padding-top: 0;
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+
+.items-container .item-row:last-of-type {
+    margin-bottom: 20px;
+    padding-top: 10px;
+    border-bottom: none;
+}
+
+.item-row {
+
+    max-width: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.item-row a {
+    text-decoration: none;
+}
+
+.item-heading {
+    /*/background-color: aquamarine;
+    border-color: black;
+    border: ridge;/*/
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-size: cover; //margin: 0 auto;
+    position: relative;
+
+}
+
+.border-top {
+    border-top: 1px solid #cccccc;
+}
+
+.item {
+    /*/background-color: aquamarine;
+    border-color: black;
+    border: ridge;/*/
+    //  height: 33%;
+    height: 200px; //   min-height: 200px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 10px;
+    background-size: cover;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.item img {
+    max-width: 150px;
+    max-height: 150px;
+
+}
+
+
+.align-right sup {
+    font-weight: 600;
+    font-size: 10px;
+}
+
+.align-right h1 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.align-right h2 {
+    text-align: right;
+    font-stretch: condensed;
+}
+
+.align-right h3 {
+    font-weight: 600;
+}
+
+.align-right h4,
+.align-right h5 {
+    font-weight: 300;
+    text-align: right;
+    letter-spacing: -0.1px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+.edit-controls {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 30px;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.content {
+    padding-top: 15px;
+    font-size: 17px;
+    letter-spacing: -.05px;
+}
+
+.content-style,
+.content-color {
+    font-weight: 300;
+    padding-top: 2px;
+}
+
+.content-size,
+.content-qty {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.content-qty {
+    border: ridge;
+    border-width: 1px;
+    padding-left: 10px;
+    padding-right: 12px;
+    margin-right: -10px;
+}
+
+.content-price {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.content-price-slashed,
+.content-price {
+    font-family: 'arial', sans-serif;
+}
+
+.total-items h3 {
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.pageheading h1 {
+    font-size: 70px;
+    font-weight: 300;
+    margin-bottom: 60px;
+
+}
+
+.col-name-qty,
+.col-name-size {
+    display: none;
+}
+
+.price-container{
+    display: block;
+}
+
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
