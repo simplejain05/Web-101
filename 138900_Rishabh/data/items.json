@@ -1,0 +1,52 @@
+{ 
+  "0": {
+    "id": 1,
+    "name": "TEEN ROCK BLUE JEANS",
+    "style": "#MS13KT1",
+    "color": "blue",
+    "size":  "L",
+    "qty": 2,
+    "price": 35,
+	"reducedprice": 25,
+    "imgsrc": "img/blue.png"
+  },
+  "1": {
+    "id": 2,
+    "name": "TEEN ROCK JEANS",
+    "style": "#MS13KT1",
+    "color": "yellow",
+    "size":  "XL",
+    "qty": 2,
+    "price": 25,
+	"reducedprice": 25,
+    "imgsrc": "img/yellowjeans.png"
+  },
+
+  
+  "2": {
+    "id": 3,
+    "name": "PINK RAINBOW PRINT GIRLS TEE",
+    "style": "#MS13KT1",
+    "color": "pink",
+    "size":	 "XL",
+    "qty": 2,
+    "price": 30,
+	"reducedprice": 25.5,
+    "imgsrc": "/img/pinkshirt.png"
+  },
+  
+    "3": {
+    "id": 4,
+    "name": "SOLID GREEN COTTON TSHIRT",
+    "style": "#MS13KT1",
+    "color": "yellow",
+    "size":   "XXL",
+    "qty": 2,
+    "price": 11.3,
+	"reducedprice": 11.3,
+    "imgsrc": "/img/shirt.png"
+  }
+  
+
+     
+}
