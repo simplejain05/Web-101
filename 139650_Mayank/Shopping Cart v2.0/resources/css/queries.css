@@ -1,0 +1,154 @@
+/* Big tablet to 1200px (widths smaller taht the 1140px row) */
+
+@media only screen and (max-width: 1200px) {}
+
+
+/* Small tablet to big tablet: from 768px to 1023px */
+
+@media only screen and (max-width: 1023px) {
+    .section-faq-promotions .promo-left {
+        width: 50%;
+    }
+
+    .section-faq-promotions .promo-right {
+        width: 45%;
+    }
+
+    .product-info .white-space,
+    .cart--products .white-space {
+        display: none;
+    }
+}
+
+
+
+/* Small phones to small tablets: from 481px to 767px */
+
+@media only screen and (max-width: 767px) {
+
+    section,
+    header {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .header-title {
+        border-bottom: 1px solid #DDDBDC;
+        padding-bottom: 4%;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    h1 {
+        color: #69696B;
+        font-size: 140%;
+        word-spacing: 4px;
+        letter-spacing: 1px;
+
+    }
+
+    .product-info .white-space,
+    .cart--products .white-space {
+        display: none;
+    }
+    
+    .checkout-info .promo-right{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .cart-checkout .promo-right{
+        width: 100%;
+    }
+    
+    .promo-right a:link{
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 20px;
+        font-size: 110%;
+        word-spacing: 2px;
+    }
+    .promo-right .btn-checkout{
+        width: 100%;
+        height: 55px;
+        margin-left: 2px;
+        padding-right: 25px;
+    }
+    
+    .products-details-row .span-2-of-12,
+    .products-details-row .span-6-of-12{
+        width: 50%;
+    }
+
+}
+
+
+
+/* Small phones: from 0 to 480px */
+
+@media only screen and (max-width: 480px) {
+
+    section,
+    header {
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    .header-title {
+        border-bottom: none;
+        padding-bottom: 4%;
+        width: 50%;
+    }
+
+    h1 {
+        color: #69696B;
+        font-size: 70%;
+        word-spacing: 2px;
+        font-weight: 500;
+
+    }
+
+    .promo-code {
+        margin-right: 15px;
+    }
+
+    .product-info .span-1-of-12 {
+        display: none;
+    }
+
+    .section-faq-promotions {
+        padding-top: 5px;
+    }
+
+    .section-faq-promotions .faq {
+        display: none;
+    }
+
+    .section-faq-promotions .promo-left {
+        width: 55%;
+    }
+
+    .section-faq-promotions .apply-promo .promo-left {
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding: 0 35px 15px 35px;
+    }
+
+    .section-faq-promotions .apply-promo .promo-right {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    .total {
+        font-size: 90%;
+    }
+
+}
