@@ -1,0 +1,214 @@
+/* Small phones: from 0 to 480px */
+
+@media only screen and (max-width: 480px) {
+    
+    
+    .span-3-of-12 {
+        width: 50%;
+    }
+    .span-5-of-12 {
+        width: 50%;
+        float: right;
+        position: relative;
+    }
+    .span-1-of-12 {
+        width: 15%;
+        position: relative;
+    }
+    .span-1-of-4 {
+        width: 30%;
+    }
+    
+    .span-2-of-4 {
+        width: 40%;
+    }
+    
+    header {
+        border-bottom:  7px solid #dddbdc;
+    }
+    h1{
+        font-size: 120%;
+        font-weight: 400;
+        
+        margin: 20px 0 20px 0;
+        display: inline-block;
+    }
+    .section-header{
+        display: none;
+    }
+    
+    .hide-in-mobile {
+        display: none;
+    }
+    .product-count-mobile {
+        display: block;
+        display: inline-block;
+        float: right;
+        margin-top: 20px;
+    }
+    
+    .product-image {
+        width: 100%;
+    }
+   
+    .product-details {
+        margin-top: 35px;
+    }
+    .product-details span:first-child {
+        font-size: 100%
+    }
+    .product-details span,
+    .mobile-product-labels,
+    .product-size
+    {
+        font-size: 70%
+    }
+    .product-size {
+        position: absolute;
+        top: -153px;
+        left: 145px;
+    }
+    .product-quantity input{
+        position: absolute;
+        top:-67px;
+        left: 195px;
+    }
+    .mobile-product-labels,
+    .mobile-product-label-qty {
+        display: block;
+        position: absolute;
+    }
+    .mobile-product-labels {
+        top:-104px;
+        left: 152px;
+        font-size: 70%
+    }
+    .mobile-product-label-qty {
+        top:-70px;
+        left: 152px;
+    }
+    .product-buttons {
+        position: relative;
+        top:40px;
+        left: -150px;
+        width: 155%;
+    }
+    .product-price {
+        position: relative;
+        top: -65px;
+        left: 65px;
+    }
+    .product-price-linethrough,
+    .product-price-discounted{
+        position: relative;
+        top: -75px;
+        left: 65px;
+    }
+    
+    .promo-label {
+        text-align: center;
+        margin: 0 0 20px 70px;
+    }
+    
+    .move-right {
+        border-bottom: 2px solid #dddbdc;
+    }
+    .promo-text-box {
+        float: left;
+        width: 90%;
+        margin-bottom: 45px;
+    }
+    .promo-text-box input {
+        height: 50px;
+    }
+    .promo-text-box button {
+        float: right;
+        height: 50px;
+    }
+    
+    .price-row:last-child {
+        border-bottom: 1px solid transparent;
+    }
+    
+    /*checkout section */
+    
+    .checkout {
+        display: none;
+    }
+    .checkout-mobile {
+        display: block;
+    }
+    
+    .checkout-mobile li {
+        list-style: none;
+        display: inline-block;
+        text-transform: uppercase;
+        text-align: center;
+        height: 60px;
+        margin: 0 40px 10px 40px;
+    }
+    .checkout-mobile li:first-child a:link,
+    .checkout-mobile li:first-child a:visited {
+        text-decoration: none;
+        background-color: #1069bd;
+        color: #fff;
+        border: 1px solid #1069bd;;
+        padding: 15px 120px;
+        
+    }
+    
+    .checkout-mobile li:last-child a:link,
+    .checkout-mobile li:last-child a:visited {
+        color: #969696;
+        letter-spacing: 1px;
+        margin-left: 85px;
+        font-size: 80%;
+    }
+    
+    .secure-statement {
+        display: none;
+    }
+    .secure-statement-mobile { 
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-weight: 300;
+        font-size: 90%;
+    }
+    .secure-statement-mobile p:first-child{
+        margin-bottom: 15px;
+        padding: 0 100px;
+    }
+
+    .secure-statement-mobile-signin {
+        border-top: 3px solid #dddbdc;
+        text-align: left;
+        padding: 30px 0;
+        margin: 20px 30px 10px 30px;
+        letter-spacing: 1.5;
+    } 
+    .secure-statement-mobile-signin a {
+        text-transform: uppercase;
+    }
+    
+    /*-- Overlay ---*/
+    .product-overlay-name {
+        font-size: 80%;
+    }
+    
+    .product-overlay-price span sup {
+        font-size: 40%;
+    }
+    .product-overlay-price span {
+        font-size: 200%;
+        font-weight: 400;
+    }
+    .product-overlay-selectors select {
+        height: 40px;
+        width: 45%;
+    }
+    
+    .overlay-edit-button {
+        padding: 10px 40px;
+    }
+}

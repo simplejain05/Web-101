@@ -1,0 +1,234 @@
+<!DOCUMENT html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="Vendors/css/grid.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,200,300,400,300italic' rel='stylesheet' type='text/css'>
+        <link href="https://unpkg.com/ionicons@4.1.2/dist/css/ionicons.min.css" rel="stylesheet">
+        <!-- Magnific Popup core CSS file -->
+        <link rel="stylesheet" href="Vendors/css/magnific-popup.css">
+        <link rel="stylesheet" href="Resources/css/Queries.css">
+        <title>Shopping Bag</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1>Your Shopping Bag</h1>
+                <span class="product-count-mobile">%product-count% Items</span> 
+            </div>
+          
+        </header>
+        <section class="section-header">
+            <div class="row">
+                <div class="col span-8-of-12">
+                    <span class="product-count">%product-count%</span> Items
+                </div>
+                <div class="col span-1-of-12">
+                   &nbsp;
+                </div>
+                <div class="col span-1-of-12 right-col">
+                    size
+                </div>
+                 <div class="col span-1-of-12 right-col">
+                    Qty
+                </div>
+                 <div class="col span-1-of-12 right-col">
+                    Price
+                </div>
+            </div>	
+        </section>
+     
+		<section class="section-product-list">
+            <div class="no-product-message">
+                <p>No Products are added to the cart.</p>
+            </div>
+		</section>
+        
+        <section class="section-contact-us">
+          <div class="row">
+            <div  class="col span-1-of-6 hide-in-mobile">
+                <ul>
+                    <li>
+                        Need help<br/> or have question ? 
+                    </li>
+                    <li>
+                        Call customer service at 1-800-555-5555
+                    </li>
+                     <li>
+                        <a href="#">Chat with one of our stylists</a>
+                    </li>
+                     <li>
+                        <a href="#">See return & exchange policy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col span-1-of-6"></div>
+              
+              <div class="col span-4-of-6">
+                  <div class="row  move-right">
+                    <div class="promo-box">
+                        <div class="promo-label">
+                            <label>Enter promotion code<br/> or gift card</label>
+                        </div>
+                        <div class="promo-text-box clear-fix">
+                            <input type="text" class="promo-input-box">
+                            <button class="btn-promo-apply" name="apply">apply</button>
+                        </div>
+                        
+                    </div>
+                      <div class="promo-error">
+                            <span>Invalid promo code.</span>
+                      </div>
+                  </div>
+                
+               <div class="row price-row">
+                      <div class="class-label">
+                        <label>subtotal</label>
+                      </div>
+                      <div class="class-amount">
+                        <sup>$</sup><span class="product-subtotal">%product-subtotal%</span> 
+                      </div>
+                </div>
+                <div class="row price-row promo-row" id="promo-row">
+                      <div class="class-label">
+                        <label>promotion code %promo% applied</label>
+                      </div>
+                      <div class="class-amount">
+                       -<sup>$</sup><span class="promo-amount">7.00</span> 
+                      </div>
+                </div> 
+                
+                 <div class="row price-row">
+
+                      <div class="class-label">
+                        <label>Estimated shipping*</label>
+                          <p class="shipping-clarification">
+                              %product-shipping-text%
+                          </p>
+                      </div>
+                      <div class="class-amount">
+                       <span class="shipping-amount">%product-shipping-cost%</span> 
+                      </div>
+                </div>    
+                
+                <div class="row price-row">
+
+                      <div class="class-label">
+                        <label>Estimated Total</label>
+                          <p>
+                              Tax will be applied during checkout
+                          </p>
+                      </div>
+                      <div class="class-amount">
+                        <sup>$</sup><span class="final-amount">%final-cost%</span> 
+                      </div>
+                </div>   
+                  
+            </div>
+           </div>
+            
+        </section>
+        
+        <section class="section-bottom">
+            <div class="row">
+                <div class="checkout">
+                    <ul>
+                        <li>
+                            <a href="#">Continue Shopping</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-checkout">Checkout</a>
+                        </li>
+                    
+                    </ul>
+                </div>
+                <div class="secure-statement">
+                    <p>
+                      <ion-icon name="lock"></ion-icon>  Secure checkout. Shopping is always sage and secure
+                    </p>
+                </div>
+                
+                <div class="checkout-mobile">
+                    <ul>
+                        <li>
+                            <a href="#" class="btn-checkout">Checkout</a>
+                        </li>
+                        <li>
+                            <a href="#">Continue Shopping</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="secure-statement-mobile">
+                     <p>
+                      Secure checkout. Shopping is always sage and secure
+                    </p>
+                    <span><ion-icon name="lock"></ion-icon> </span>
+                    <p class="secure-statement-mobile-signin"><a href="#">Sign In</a> to save your cart and have access to your items on mobile, tablet, and desktop. </p>
+                </div>
+            </div>
+        
+        </section>
+        
+        <div class="mfp-hide white-popup" id="test-popup">
+            <div class="row-big">
+                <div class="col span-1-of-4">
+                    <div class="row ">
+                        <div class="product-overlay">
+                            <ui>
+                            <li class="product-overlay-name">
+                                <span>Solid Green Cutton Tshirt </span>
+                            </li>
+                            <li class="product-overlay-price">
+                                <span><sup>$</sup> 21</span>
+                            </li>
+                            <li class="product-overlay-color">
+                                <span>Solid Green</span>
+                            </li>
+                            <li class="product-overlay-color-picker">
+                                <input type="text" class="color-text-box" readonly>
+                                <input type="text" class="color-text-box" readonly>
+                            </li>
+                            <li class="product-overlay-selectors">
+                                <select id="product-size-selector">
+                                    <option value="size" selected>SIZE</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                </select>
+                                
+                                <select id="product-quantity-selector">
+                                    <option value="1" selected>QTY: 1</option>
+                                    <option value="2">QTY: 2</option>
+                                    <option value="3">QTY: 3</option>
+                                    <option value="4">QTY: 4</option>
+                                </select>
+                            </li>
+                            <li>
+                                <a href="#" class="overlay-edit-button" >Edit</a>
+                            </li>
+                            <li>
+                                 <a href="#" class="overlay-details-button" >See Product Details</a>
+                            </li>
+                        </ui>
+                        
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col span-2-of-4 ">
+                    <div class="image-container">
+                        <img class="product-overlay-image" src="Resources/img/Pink%20Rainbow%20Girl%20Tee.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+         <script src="https://unpkg.com/ionicons@4.1.2/dist/ionicons.js"></script>
+           <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+         <script src="Vendors/js/jquery.min.js"></script>
+
+    <!-- Magnific Popup core JS file -->
+        <script src="Vendors/js/jquery.magnific-popup.js"></script>
+        <script src="Resources/js/script.js"></script>
+    </body>
+    
+</html>

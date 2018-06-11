@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="Vendors/CSS/normalize.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,400">
+    <link rel="stylesheet" type="text/css" href="Vendors/CSS/grid.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/query.css" />
+
+    <title>Cart</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <header>
+                <h1>YOUR SHOPPING BAG </h1>
+            </header>
+        </div>
+        <div class="row-header">
+            <div class="col span-1-of-5">
+                <h3>
+                    <strong>3</strong> ITEMS
+                </h3>
+
+            </div>
+            <div class="col span-2-of-5 row-header-1">
+
+            </div>
+            <div class="col span-2-of-5 row-header-2">
+                <div class="col span-1-of-3">
+                    <h3>
+                        SIZE
+                    </h3>
+
+                </div>
+                <div class="col span-1-of-3">
+                    <h3>
+                        QTY
+                    </h3>
+
+                </div>
+                <div class="col span-1-of-3">
+                    <h3>
+                        PRICE
+                    </h3>
+
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <section class="car-list-item">
+
+            <div class="row border-thin-thin" id="row-1">
+                <div class="col span-5-of-5">
+                    <div class="Item-photo">
+                        <img src="img/tshirts-1.jpeg" alt="tshirt">
+                    </div>
+                    <div class="section-item-description">
+                        <div class="col span-1-of-2 section-1">
+                            <span class="item-title">Solid Green cotton tshirt </span>
+                            <p>
+                                Style #:MS13KT1906
+                                <br> Colour: Blue
+                                <br>
+                                <span class="item-size mob"> Size: S </span>
+                            </p>
+                        </div>
+                        <div class="col span-1-of-2 section-2">
+                            <div class="col span-1-of-3 item-title size-mob">
+                                S
+                            </div>
+                            <div class="col span-1-of-3 sec-qty">
+                                <div class="input-lbl">
+                                    <label class="lbl-qty">QTY: </label>
+                                </div>
+                                <div class="lbl-input">
+                                    <input class="input-qty" type="text" value="1">
+                                </div>
+                            </div>
+                            <div class="col span-1-of-3 sec-dollar">
+                                <span class="dollar"> 11.00</span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-action">
+                        <ul>
+                            <li>
+                                <a href="#" onclick="on()"> EDIT</a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="remove(this)">X REMOVE</a>
+                            </li>
+                            <li>
+                                <a href="#">SAVE FOR Later</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- <div class="col span-2-of-5 item-qty-display">
+                    <div class="col span-1-of-3 item-title">
+                        S
+                    </div>
+                    <div class="col span-1-of-3">
+                        <input class="input-qty" type="text" value="1">
+                    </div>
+                    <div class="col span-1-of-3">
+                        <span class="dollar"> 11.00</span>
+
+                    </div>
+                </div> -->
+
+            </div>
+            <!-- <div class="border-thin"></div> -->
+            <div class="row" id="row-2">
+                <div class="col span-5-of-5">
+                    <div class="Item-photo">
+                        <img src="img/tshirts-2.jpeg" alt="tshirt">
+                    </div>
+                    <div class="section-item-description">
+                        <div class="col span-1-of-2 section-1">
+                            <span class="item-title">Solid Green cotton tshirt </span>
+                            <p>
+                                Style #:MS13KT1906
+                                <br> Colour: Blue
+                                <br>
+                                <span class="item-size mob"> Size: S </span>
+                            </p>
+                        </div>
+                        <div class="col span-1-of-2 section-2">
+                            <div class="col span-1-of-3 item-title size-mob">
+                                S
+                            </div>
+                            <div class="col span-1-of-3 sec-qty">
+                                <div class="input-lbl">
+                                    <label class="lbl-qty">QTY: </label>
+                                </div>
+                                <div class="lbl-input">
+                                    <input class="input-qty" type="text" value="1">
+                                </div>
+                            </div>
+                            <div class="col span-1-of-3 sec-dollar">
+                                <span class="dollar"> 11.00</span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-action">
+
+                        <ul>
+                            <li>
+                                <a href="#"> EDIT</a>
+                            </li>
+                            <li>
+                                <a href="#">X REMOVE</a>
+                            </li>
+                            <li>
+                                <a href="#">SAVE FOR Later</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- <div class="col span-2-of-5 item-qty-display">
+                        <div class="col span-1-of-3 item-title">
+                            S
+                        </div>
+                        <div class="col span-1-of-3">
+                            <input class="input-qty" type="text" value="1">
+                        </div>
+                        <div class="col span-1-of-3">
+                            <span class="dollar"> 11.00</span>
+    
+                        </div>
+                    </div> -->
+
+            </div>
+            <div class="border-thick"></div>
+
+
+
+        </section>
+
+        <section class="section-bottom clearfix">
+            <div class="bottom-left">
+                <div class="need-help text-midium">
+                    Need help
+                    <br>Or help question?
+                </div>
+                <div class="call-help short-cpy">
+                    Call customer service at
+                    <br> 1800-555-5555
+
+                </div>
+                <div class="chat-with short-cpy">
+                    <a href="#">Chat with one of
+                        <br> our stylists</a>
+
+
+                </div>
+                <div class="return-policy short-cpy">
+                    <a href="#">See our return
+                        <br> &#38;exchange policies</a>
+
+
+                </div>
+            </div>
+            <div class="bottom-right">
+                <div class="promotion">
+                    <div class="promotion-lable form-lable">
+                     <label for="input-promo-code">  Enter Promotion Code
+                        <br>or Gift Card.</label>   
+                    </div>
+                    <div class="promotion-right">
+                        <div class="promotion-input">
+                            <input type="text" id="input-promo-code"/>
+                        </div>
+                        <div class="promotion-apply btn btn-apply">
+                            <a href="#">Apply</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subTotalRow">
+                    <div class="subTotal-left">
+                        <h3>Subtotal</h3>
+                    </div>
+                    <div class="subTotal-right">
+                        <span class="dollar">37.00</span>
+                    </div>
+                </div>
+                <div class="subTotalRow">
+                    <div class="subTotal-left">
+                        <h3>Promotion Code JF10 applied</h3>
+                    </div>
+                    <div class="subTotal-right dollar">37.00</div>
+                </div>
+                <div class="subTotalRow">
+                    <div class="subTotal-left">
+                        <h3>Estimated delivery</h3>
+                        <div class="short-cpy"> You qualify for free shipping
+                            <br> because your order is over $50*
+                        </div>
+                    </div>
+                    <div class="subTotal-right">
+                        <span class="dollar">37.00</span>
+                    </div>
+                </div>
+
+                <div class="border-thin"></div>
+                <div class="subTotalRow bottom-border-thick-zero clearfix">
+                    <div class="subTotal-left">
+                        <h2>Estimated total</h2>
+                        <div class="short-cpy">
+
+                            Tax will be applied during checkout
+                            <br> your order is above $50*
+                        </div>
+                    </div>
+                    <div class="subTotal-right dollar big">37.00</div>
+                </div>
+
+                <div class="subTotalRow">
+
+                    <div class="subTotal-right-checkout">
+                        <div class="ctn-shopping">
+                            <a href="#">Continue SHOPPING</a>
+                        </div>
+                        <div class="checkout btn btn-blue">
+                            <a href="#">CheckOut</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="subTotalRowSecure">
+                    <div class="section-secure">
+                        <div class="subTotal-left-30">
+
+                            <img alt="secure" src="img/secure.png" >
+                        </div>
+                        <div class="subTotal-right-70">
+                            <span class="short-cpy">
+                                Secure checkout. Shopping is always safe & secure
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="subTotalRowSignin">
+                    <p class="short-cpy">
+                        <a href="#">SING IN</a>
+                        to save your cart and have access to your items on mobile, tablet, and desktop
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <div id="overlay">
+            <div class="overlay-edit">
+                <span class="btn-close short-cpy" onclick="off()">
+                    <strong>x</strong>
+                </span>
+                <div class="overlay-edit-1 clearfix">
+                    <div class="overlay-item-desc">
+                        <div class="border-thick"></div>
+                        <div class="item-desc-box">
+                            <div class="overlay-item-name">
+                                <span class="short-cpy">item name</span>
+                            </div>
+                            <div class="overlay-item-price dollar-biggest">
+                                <span> 21</span>
+                            </div>
+
+                            <div class="overlay-item-color clearfix">
+
+                                <div class="overlay-item-color-label">
+                                    <span>Colors</span>
+                                </div>
+
+                                <div class="overlay-item-color-icons">
+                                    <div class="coloricon orange"></div>
+                                    <div class="coloricon yellow"></div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="overlay-item-edit clearfix">
+                                <div class="overlay-size">
+                                    <select name="size">
+                                        <option value="0">SIZE</option>
+                                        <option value="1">S</option>
+                                        <option value="2">M</option>
+                                        <option value="3">L</option>
+                                    </select>
+                                </div>
+                                <div class="overlay-qty">
+                                    <select name="qty">
+                                        <option value="1">QTY: 1</option>
+                                        <option value="2">QTY: 2</option>
+                                        <option value="3">QTY: 3</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                            <div class="overlay-item-buton checkout btn btn-blue">
+                                <a href="#">EDIT</a>
+                            </div>
+
+
+                            <div class="overlay-item-product-details">
+                                <a href="#">See product details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overlay-item-photo">
+                        <img src="img/tshirts-1.jpeg" alt="tshirt">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+
+
+</html>

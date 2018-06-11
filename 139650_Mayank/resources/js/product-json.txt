@@ -1,0 +1,37 @@
+{
+  "products": [
+    {
+      "ID": "PID10856158",
+      "Image": "resources/img/Solid%20Green%20TShirt.jpg",
+      "Name": "SOLID GREEN COTTON TSHIRT",
+      "Style": "MS 13KT1906",
+      "Colour": "Blue",
+      "Size": "M",
+      "ActualPrice": 11.00,
+      "Quantity": 2,
+      "DiscountedPrice": 10.00
+    },
+    {
+      "ID": "PID10856159",
+      "Image": "resources/img/Pink%20Rainbow%20Girl%20Tee.jpg",
+      "Name": "PINK RAINBOW PRINT GIRLS TEE",
+      "Style": "MS 13KT1906",
+      "Colour": "Pink",
+      "Size": "S",
+      "ActualPrice": 12.50,
+      "Quantity": 1,
+      "DiscountedPrice": 8.00
+    },
+    {
+      "ID": "PID10856160",
+      "Image": "resources/img/Sky%20blue%20kids%20tee.jpeg",
+      "Name": "Sky blue kids tee",
+      "Style": "MS 13KT1906",
+      "Colour": "Sky Blue",
+      "Size": "L",
+      "ActualPrice": 13,
+      "Quantity": 1,
+      "DiscountedPrice": 0
+    }
+  ]
+}

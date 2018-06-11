@@ -1,0 +1,549 @@
+    /* ----------------------------------------------- */
+
+    /* BASIC SETUP */
+
+    /* ----------------------------------------------- */
+
+    * {
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        background-color: #fff;
+        color: #555;
+        font-family: 'Lato', 'Arial', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        text-rendering: optimizeLegibility;
+        overflow-x: hidden;
+    }
+
+
+    /* ----------------------------------------------- */
+
+    /* REUSABLE COMPONENTS */
+
+    /* ----------------------------------------------- */
+
+    .row {
+        margin: 0;
+    }
+
+    /* ----- HEADINGS ----- */
+
+    h1,
+    h2,
+    h3 {
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    h1 {
+        color: #69696B;
+        font-size: 240%;
+        word-spacing: 4px;
+        letter-spacing: 1px;
+
+    }
+
+    .hide {
+        display: none;
+    }
+
+    *:focus {
+        outline: none;
+    }
+
+    .error {
+        color: #f70a0a;
+        font-size: 80%;
+        font-weight: 400;
+    }
+
+
+    /* ----------------------------------------------- */
+
+    /* HEADER COMPONENTS */
+
+    /* ----------------------------------------------- */
+
+    section,
+    header {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .header-title {
+        border-bottom: 1px solid #DDDBDC;
+        padding-bottom: 4%;
+    }
+
+    /* ----------------------------------------------- */
+
+    /* PRODUCT COMPONENTS */
+
+    /* ----------------------------------------------- */
+
+    .section-products-info {
+        padding-top: 10px;
+    }
+
+    .product-info {
+        border-bottom: 8px solid #DDDBDC;
+    }
+
+    .product-info p {
+        font-size: 70%;
+        text-transform: uppercase;
+        color: #7F7F7F;
+        font-weight: 400;
+        margin-left: 25px;
+    }
+
+    .cloth-photo img {
+        width: 100%;
+        height: auto;
+    }
+
+    .product-title {
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #6E6E6E;
+        font-size: 85%;
+    }
+
+    .cloth-description {
+        padding: 10px;
+    }
+
+    .cloth-description p {
+        color: #4B4B4B;
+        font-size: 70%;
+        line-height: 130%;
+    }
+
+    .product-size,
+    .product-quantity,
+    .product-price {
+        padding-top: 10px;
+    }
+
+    .product-size span,
+    .product-quantity input {
+        font-size: 65%;
+        font-weight: 500;
+    }
+
+    .product-size span {
+        padding-left: 35px;
+    }
+
+
+    .product-quantity input {
+        width: 45%;
+        margin-left: 20px;
+        text-align: center;
+        height: 25px;
+    }
+
+    .product-price sup,
+    .promo-code sup {
+        font-size: 70%;
+        font-weight: 500;
+        vertical-align: baseline;
+        margin-left: 5px;
+        margin-right: 1px;
+    }
+
+    .product-price span {
+        padding-left: 18px;
+        font-size: 85%;
+        font-weight: 500;
+
+    }
+
+    .products-details-row:first-child {
+        border-bottom: none;
+    }
+
+    .products-details-row {
+        padding: 15px 0;
+        border-bottom: 1px solid #DDDBDC;
+    }
+
+    /* ----------------------------------------------- */
+
+    /* Buttons */
+
+    /* ----------------------------------------------- */
+
+    .btn-apply {
+        width: 30%;
+        height: 35px;
+        text-transform: uppercase;
+        background-color: #FFF;
+        border: 2px solid #DDDBDC;
+        color: #7F7F7F;
+        font-size: 15px;
+        font-weight: 500;
+        bottom: 2px;
+        position: relative;
+    }
+
+/******* Links ****************/
+
+    .product-cta {
+        list-style: none;
+        padding-left: 10px;
+        padding-top: 65px;
+    }
+
+    .product-cta li {
+        display: block;
+        float: left;
+    }
+
+    .product-cta li:after {
+        content: " | ";
+        color: #969696;
+        font-size: 65%;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .product-cta li:last-child:after {
+        content: " ";
+    }
+
+    .product-cta li a:link,
+    .product-cta li a:visited {
+        text-decoration: none;
+        color: #737373;
+        text-transform: uppercase;
+        font-size: 65%;
+        font-weight: 400;
+    }
+
+    .icon-small {
+        font-size: 95%;
+        color: #A9A9A9;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .products-details-row:last-child {
+        border-bottom: 8px solid #DDDBDC;
+    }
+
+    /* ----------------------------------------------- */
+
+    /* FAQ and Promotions */
+
+    /* ----------------------------------------------- */
+
+    .section-faq-promotions {
+        padding-top: 35px;
+        padding-left: 10px;
+    }
+
+    .faq p {
+        padding-top: 20px;
+        color: #858585;
+        font-size: 80%;
+        word-wrap: break-word;
+        word-spacing: 2px;
+    }
+
+    .faq a:link,
+    .faq a:visited {
+        color: #7F7F7F;
+        text-decoration: underline;
+    }
+
+    .faq-question {
+        font-weight: 500;
+    }
+
+    .faq .underline {
+        text-decoration: underline;
+    }
+
+    .faq span {
+        display: block;
+    }
+
+    .promo-left {
+        float: left;
+        width: 30%;
+    }
+
+    .promo-right {
+        float: right;
+        width: 45%;
+        text-align: right;
+    }
+
+
+    .promo-code {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-weight: 500;
+        color: #4B4B4B;
+        font-size: 75%;
+        text-transform: uppercase;
+    }
+
+    .promo-code:first-child {
+        border-bottom: 8px solid #DDDBDC;
+        font-size: 100%;
+        font-weight: 300;
+        padding-top: 20px;
+    }
+
+
+    .shipping-details {
+        border-bottom: 1px solid #DDDBDC;
+    }
+
+    .promo-code label {
+        text-transform: uppercase;
+        color: #737373;
+    }
+
+    .promo-right input[type=text] {
+        width: 65%;
+        height: 35px;
+        margin-top: 2px;
+        border: 2px solid #DDDBDC;
+        margin-right: 5px;
+        text-transform: uppercase;
+    }
+
+    .shipping-info {
+        color: #B1B1B1;
+        line-height: 145%;
+        text-transform: none;
+        word-spacing: 4px;
+        padding-top: 5px;
+    }
+
+    .estimated-total {
+        border-bottom: 8px solid #DDDBDC;
+        padding: 20px 0;
+        margin-left: 5px;
+        margin-right: 1px;
+        font-weight: 500;
+    }
+
+    .estimated-total span {
+        font-size: 115%;
+    }
+
+    .tax-info {
+        color: #B1B1B1;
+        font-size: 75%;
+        line-height: 145%;
+        text-transform: none;
+        word-spacing: 4px;
+        padding-top: 5px;
+    }
+
+    .total {
+        text-transform: uppercase;
+        font-size: 120%;
+        font-weight: 500;
+    }
+
+    .promo-code a:link,
+    .promo-code a:visited {
+        text-decoration: none;
+        color: #737373;
+        text-transform: uppercase;
+        font-size: 90%;
+        font-weight: 400;
+        word-spacing: 3px;
+        text-decoration: underline;
+        margin-right: 20px;
+    }
+
+    .btn-checkout,
+    .btn-edit {
+        background-color: #1069BD;
+        color: #FFF;
+        border: none;
+        width: 30%;
+        height: 40px;
+        text-transform: uppercase;
+    }
+
+    .checkout-info {
+        margin-bottom: 35px;
+    }
+
+    .checkout-info p {
+        font-size: 78%;
+        font-weight: 400;
+        display: inline;
+        color: #ABABAB;
+        word-spacing: 2px;
+    }
+
+    .icon-lock {
+        font-size: 120%;
+        color: #F9B812;
+    }
+
+
+    .cart--message {
+        display: none;
+        font-weight: 400;
+        font-size: 125%;
+        text-align: center;
+        padding: 35px;
+        border-bottom: 8px solid #DDDBDC;
+    }
+
+    .actual--price {
+        color: #D5D5D5;
+        text-decoration: line-through;
+    }
+
+    /* ----------------------------------------------- */
+
+    /* Pop Up CSS */
+
+    /* ----------------------------------------------- */
+
+    .white-popup {
+        position: relative;
+        background: #FFF;
+        padding: 20px;
+        width: auto;
+        max-width: 60%;
+        margin: 30px auto;
+    }
+
+    .white-popup .row {
+        margin: 25px 0;
+    }
+
+    .item-container img {
+        width: 100%;
+    }
+
+    .item--details {
+        border-top: 4px solid #DDDBDC;
+        text-align: center;
+        margin: 25% 15% 15% 15%;
+    }
+
+    .item-title {
+        color: #a6a6a7;
+        padding-top: 35px;
+        text-transform: uppercase;
+        font-size: 75%;
+        font-weight: 400;
+    }
+
+    .item-price {
+        padding-top: 5px;
+    }
+
+    .item-price strong {
+        font-size: 55px;
+        font-weight: 400;
+
+    }
+
+    .item--details sup {
+        vertical-align: super;
+        font-size: 20px;
+        padding-right: 3px;
+    }
+
+    .item-colour {
+        display: -webkit-box;
+        align-items: center;
+        text-align: center;
+        margin-left: 41%;
+    }
+
+    .square {
+        width: 22px;
+        height: 15px;
+        margin-right: 5px;
+    }
+
+    .active {
+        width: 25px;
+        height: 18px;
+        border: 1px solid #DDDBDC;
+        margin-right: 5px;
+    }
+
+    .inactive {
+        margin-top: 2px;
+    }
+
+    .paisley {
+        background-color: #faf8d3;
+    }
+
+    .green {
+        background-color: #A4D39F;
+    }
+
+    .color-title {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 13px;
+        font-weight: 400;
+        padding-bottom: 5px;
+        letter-spacing: 1px;
+    }
+
+    .item-quantity {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .item-quantity select {
+        width: 28%;
+        height: 40px;
+        border: 1px solid #DDDBDC;
+        text-transform: uppercase;
+        font-size: 65%;
+        text-align: center;
+        font-weight: 400;
+        margin-right: 5px;
+        outline: none;
+    }
+
+    .btn-edit {}
+
+    .item-edit {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .item-edit .btn-edit {
+        width: 60%;
+        font-size: 75%;
+    }
+
+    .product-details {
+        margin-top: 5px;
+    }
+
+    .product-details a:link,
+    .product-details a:visited {
+        text-decoration: none;
+        border-bottom: 1px solid #DDDBDC;
+        color: #676767;
+        font-size: 65%;
+        word-spacing: 2px;
+    }

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shopping Cart Website which gives you variety of products to buy online in few clicks.">
+    <meta name="format-detection" content="telephone=yes"/>
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,300italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="vendors/css/magnific-popup.css">
+    <script src="https://unpkg.com/ionicons@4.1.2/dist/ionicons.js"></script>
+    <title>Shopping Cart</title>
+</head>
+
+<body>
+    <header class="header-title">
+        <div class="row">
+            <h1>Your Shopping Bag</h1>
+        </div>
+    </header>
+
+    <section class="section-products-info">
+        <div class="row product-info">
+            <div class="col span-8-of-12">
+                <p><strong><span class="item--count">3</span></strong>&nbsp;Items</p>
+            </div>
+            <div class="col span-1-of-12 white-space">&nbsp;</div>
+            <div class="col span-1-of-12">
+                <p>Size</p>
+            </div>
+            <div class="col span-1-of-12">
+                <p>Qty</p>
+            </div>
+            <div class="col span-1-of-12">
+                <p>Price</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-products-details">
+        <div class="cart--products">
+            <!--
+Leaving this code so that SME can go through it to understand how products are getting generated, should be removed.
+            <div class="row products-details-row">
+                
+                    <div class="col span-2-of-12">
+                        <div class="cloth-photo">
+                            <img src="resources/img/Solid%20Green%20TShirt.jpg" alt="Solid Green Tshirt" />
+                        </div>
+                    </div>
+                    <div class="col span-6-of-12">
+                        <div class="cloth-description">
+                            <span class="product-title">Solid Green Cotton TShirt</span>
+                            <p>Style #: <span>MS 13KT1906</span></p>
+                            <p>Colour: <span>Blue</span></p>
+                        </div>
+                        <ul class="product-cta">
+                            <li><a href="#">Edit</a></li>
+                            <li><a href="#"> <i class="ion-close icon-small"></i>Remove</a></li>
+                            <li><a href="#">Save for later</a></li>
+                        </ul>
+                    </div>
+                    <div class="col span-1-of-12">&nbsp;</div>
+                    <div class="col span-1-of-12 product-size"><span>S</span></div>
+                    <div class="col span-1-of-12 product-quantity"><span><input type="text" value="1" readonly/></span></div>
+                    <div class="col span-1-of-12 product-price"><span><sup>$</sup>11.00</span></div>
+                </div>
+                </div>-->
+            <div class="cart--message hide">
+                <p>No items are added in the cart.!!!</p>
+            </div>
+
+    </section>
+
+    <section class="section-faq-promotions">
+        <div class="row">
+            <div class="col span-1-of-6 faq">
+                <p class="faq-question">Need help <span>or have questions?</span></p>
+                <p>Call Customer Service at <span>1-800-555-5555</span></p>
+                <p><a href="#" class="faq-link">Chat with one of <span>our stylist</span></a></p>
+                <p><a href="#" class="faq-link">See return <span>&amp; exchange policy</span></a></p>
+            </div>
+
+            <div class="col span-1-of-6 faq">
+                &nbsp;
+            </div>
+
+            <div class="col span-4-of-6">
+                <div class="row promo-code apply-promo">
+                    <div class="promo-left">
+                        <label for="promocode">Enter promotion code or gift card</label>
+                    </div>
+
+                    <div class="promo-right">
+                        <input id="promocode" name="promocode" type="text" value="" placeholder="Promo Code" maxlength="5" />
+                        <input class="btn-apply" type="button" value="Apply" />
+                    </div>
+                    <div class="promo-right hide promocode--error">
+                        <p role="alert" class="error">Please enter promotion code.</p>
+                    </div>
+
+                    <div class="promo-right hide invalid--promo--error">
+                        <p role="alert" class="error">Please enter valid promotion code.</p>
+                    </div>
+                </div>
+
+
+                <div class="row promo-code">
+                    <div class="promo-left">
+                        <span>Subtotal</span>
+                    </div>
+
+                    <div class="promo-right">
+                        <sup>$</sup><span class="cart--subtotal">7.00</span>
+                    </div>
+                </div>
+
+                <div class="row promo-code promo--info hide">
+                    <div class="promo-left">
+                        <span>Promotion code <strong><span class="promo--code">JF10</span></strong> Applied</span>
+                    </div>
+
+                    <div class="promo-right">
+                        <span>-&nbsp;</span><sup>$</sup><span class="promo--code--price">7.00</span>
+                    </div>
+                </div>
+
+                <div class="row shipping-details promo-code ">
+                    <div class="promo-left">
+                        <span>Estimated Shipping</span><span>&#42;</span></p>
+                        <span class="shipping-info">You qualify for free shipping because your order is over $50</span><span>&nbsp; &#42;</span>
+
+                    </div>
+
+                    <div class="promo-right">
+                        <span class="shipping-price">Free</span>
+                    </div>
+                </div>
+
+                <div class="row estimated-total">
+                    <div class="promo-left">
+                        <p class="total">Estimated Total</p>
+                        <p class="tax-info">Tax will be applied during checkout</p>
+
+                    </div>
+
+                    <div class="promo-right">
+                        <sup>$</sup><span><strong class="estimated--total">30.00</strong></span>
+                    </div>
+                </div>
+
+                <div class="row promo-code cart-checkout">
+                    <div class="promo-right">
+                        <a href="#">Continue Shopping</a>
+                        <input type="button" class="btn-checkout" value="Checkout" />
+                    </div>
+                </div>
+
+                <div class="row checkout-info">
+                    <div class="promo-right">
+                        <ion-icon name="lock" class="icon-lock"></ion-icon>
+                        <p>Secure checkout. Shopping is always safe &amp; secure</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--Pop Up Mark up-->
+    <div id="popup" class="white-popup mfp-hide">
+        <div class="row">
+            <div class="col span-2-of-5">
+                <div class="item--details">
+                    <p class="item-title">Paisley Jean</p>
+                    <p class="item-price"><sup>&#36;</sup><strong id="price">21</strong></p>
+                </div>
+                <p class="color-title">Paisley</p>
+                <div class="item-colour">
+                    <div class="square paisley active"></div>
+                    <div class="square green inactive"></div>
+                </div>
+                <div class="item-quantity">
+                    <select id="size" name="size">
+                    <option class="selected">Size</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    </select>
+
+                    <select id="quantity" name="quantity">
+                    <option value="1">QTY: 1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    </select>
+                </div>
+                <div class="item-edit">
+                    <input type="button" class="btn-edit" value="Edit">
+                    <p class="product-details"><a href="#">See product details</a></p>
+                </div>
+            </div>
+            <div class="col span-3-of-5 item-container">
+                <img class="item--img" src="resources/img/Pink%20Rainbow%20Girl%20Tee.jpg" alt="Pink Rainbow Girl Tee.jpg" />
+
+            </div>
+        </div>
+    </div>
+
+    <a id="editpopup" href="#popup" class="open-popup-link" style="display: none;">Show inline popup</a>
+
+    <script src="resources/js/script.js"></script>
+    <script src="vendors/js/jquery.min.js"></script>
+    <!-- Magnific Popup core JS file -->
+    <script src="vendors/js/jquery.magnific-popup.min.js"></script>
+    
+    <script type="application/javascript">
+        jQuery(document).ready(function() {
+            jQuery('.open-popup-link').magnificPopup({
+                src: '#popup',
+                type: 'inline'
+            });
+        });
+
+    </script>
+</body>
+</html>
