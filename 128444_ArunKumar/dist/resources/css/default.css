@@ -1,0 +1,481 @@
+/*********************************************************
+                    Element Selectors
+*********************************************************/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: #555;
+    background-color: #fff;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    padding: 8px;
+    border-radius: 1px;
+    border: 1px solid #ccc;
+}
+
+select {
+    padding: 10px;
+    border-radius: 1px;
+    border: 1px solid #ccc;
+}
+
+*:focus{
+    outline: none;
+}
+
+select,
+textarea,
+input[type=text]:focus,
+input[type=text]:hover {
+        border: 1px solid #ccc;
+}
+
+/* -----ANCHOR LINKS ----- */
+a:link,
+a:visited {
+    color: rgb(133, 129, 129);
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: rgb(58, 57, 57);
+    border-bottom: 1px solid rgb(58,57,57);
+}
+    
+/* section { } */
+
+/*********************************************************
+                    Global Selectors
+*********************************************************/
+.container {
+    width: 1140px;
+    margin-right: auto;
+    margin-left: auto; 
+    margin-top: 20px;
+    margin-bottom: auto;
+
+    /* padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto; */
+    /* margin-top: 20px; */
+}
+  
+/*********************************************************
+                    Section Product Listing
+*********************************************************/
+
+    div.col-head-1 {
+        width: 70%;
+    }
+
+    div.col-head-2,
+    div.col-head-3,
+    div.col-head-4 {
+        width: 10%;
+    }
+
+    div[class*='col-head-'] {
+        float: left;
+        padding: 0 10px 15px 10px;
+        box-sizing: border-box;
+        text-transform: uppercase;
+    }
+
+    div.col-head-1 {
+        text-align: left;
+    }
+
+    div.col-head-1 span#item {
+        font-weight: bold;
+    }
+
+    div.col-head-2,
+    div.col-head-3 {
+        text-align: center;
+    }
+
+    div.col-head-4 {
+        text-align: right;
+    }
+
+    div.header-row::after {
+        clear: both;
+        content: "";
+        height: 5px;
+        display: block;
+        background-color: rgb(193, 189, 189);
+    }
+
+    /*********************************************************
+                        Product Row
+    *********************************************************/
+    div.col-data-1 {
+        width: 15%;
+        text-align: center;
+    }
+
+    div.col-data-2 {
+        width: 55%;
+    }
+
+    div.col-data-3,
+    div.col-data-4,
+    div.col-data-5 {
+        width: 10%;
+    }
+
+    div.col-data-3,
+    div.col-data-4 {
+        text-align: center;
+    }
+
+    div.col-data-5 {
+        text-align: right;
+    }
+
+    div.col-data-1 img{
+        width: 100%;
+    }
+
+    div sub {
+        vertical-align: top;
+        font-size: xx-small;
+        display: inline-block;
+        margin-top: 2px;
+    }
+
+    .data-row div:nth-child(+n+2) {
+        padding-top: 20px;
+    }
+
+    div[class*='col-data-'] {
+        float: left;
+        box-sizing: border-box;
+        padding: 0 10px 30px 10px;
+    }
+
+    .prod-detail h4,
+    .prod-detail p {
+        margin: 0;
+    }
+
+    .col-data-2 .action-links {
+        margin-top: 20px;
+    }
+
+    .col-data-2 .action-links a {
+        font-size: 80%;
+    }
+
+    div.data-row::after {
+        clear: both;
+        content: "";
+        height: 1px;
+        display: block;
+        background-color: rgb(193, 189, 189);
+    }
+
+    div.data-row:last-child::after {
+        clear: both;
+        content: "";
+        height: 5px;
+        display: block;
+        background-color: rgb(193, 189, 189);
+    }
+
+    div .prod-price {
+        font-weight: bold;
+        font-size: 110%;
+    }
+
+    .prod-qty {
+        color: #555;
+        border: 1px solid rgb(157, 157, 157);
+        padding: 3px 10px;
+    }
+
+    /*              Product Price                    */
+
+    .section-product-price .prod-assist h4,
+    .section-product-price .left-div p {
+        margin-top: 0;
+    }
+
+    .section-product-price .prod-assist {
+        width: 20%;
+        float: left;
+    }
+
+    .section-product-price .product-price {
+        width: 80%;
+        float: left;
+    }
+
+    .section-product-price .container:first-child,
+    .section-product-price .container:last-child {
+        padding-top: 30px;
+    }
+
+    .section-product-price .container:after, 
+    .section-product-price .prod-info:after {
+        clear: both;
+        content: "";
+        display: block;
+    }
+
+    .prod-assist-info a {
+        text-decoration: underline;
+    }
+    .section-product-price .prod-info .left-div {
+        float: left;
+    }
+
+    .section-product-price .prod-info .right-div {
+        float: right;
+    }
+
+    .prod-info .right-div button {
+        color: #555;
+        background-color: #fff; 
+        padding: 8px 20px;
+        border: 1px solid #ccc;
+    }
+
+    .prod-info .right-div button:hover {
+        color: #fff;
+        background-color: #ccc; 
+        cursor: pointer;
+        transition: color 0.2s, background-color 0.3s;
+    }
+
+    /* .section-product-price .product-price .prod-promo div:first-child, */
+    .section-product-price .product-price .prod-promo div:nth-child(2) {
+        padding-bottom: 40px;
+    }
+
+    .section-product-price .product-price .prod-promo:after {
+        clear: both;
+        display: block;
+        height: 5px;
+        background-color: rgb(193, 189, 189);
+        content: "";
+    }
+
+    .section-product-price .product-price .prod-info {
+        margin-bottom: 30px;
+    }
+
+    div.prod-info:nth-child(4) div:first-child{
+        padding-bottom: 15px;
+    }
+
+    div.prod-info:nth-child(4):after {
+        clear: both;
+        content: "";
+        height: 1px;
+        display: block;
+        background-color: rgb(193, 189, 189);
+    }
+
+    .prod-est-total strong {
+        font-weight: bold;
+        font-size: 115%;
+        letter-spacing: 1.5px;
+    }
+
+    .prod-est-total .prod-price {
+        font-weight: bold;
+        font-size: 140%;
+        letter-spacing: 1.5px;
+    }
+
+
+    .prod-est-total sub {
+        vertical-align: top;
+        font-size: smaller
+    }
+
+    .prod-info .left-div p {
+        color: rgb(150, 150, 150);
+        font-size: 82%;
+        letter-spacing: 1.5px;
+    }
+
+    .left-div span {
+        font-size: 80%;
+        font-weight: bold;
+        letter-spacing: 0.8px;
+    }
+
+    /*              Popup Div Overlay                  */
+    .prod-cart:before {
+        clear: both;
+        content: "";
+        display: block;
+        padding-bottom: 32px;
+        border-top: 5px solid rgb(177, 175, 175);
+        margin: 0 40px;
+    }
+
+    .containerPopup {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(12, 12, 12, 0.749); /*dim the background*/
+        cursor: default;
+    }
+
+    .overlayPopup {
+        position: absolute;
+        width: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        background-color: #fff; /*dim the background*/
+        cursor: default;
+    }
+
+    .prod-cart {
+        float: left;
+        width: 40%;
+        margin: 5%;
+        box-sizing: border-box;
+        text-align: center;
+        vertical-align: middle;
+        padding-top: 80px;
+    }
+
+    .prod-cart span.prod-big-name{
+        color: rgb(121, 120, 120);
+        letter-spacing: 1.0px;
+    }
+
+    .prod-cart span.prod-small-name{
+        color: rgb(169, 167, 167);
+        font-size: 90%;
+        font-weight: bold;
+        letter-spacing: 1.0px;
+    }
+
+    .popup-prod-img {
+        float: right;
+        width: 40%;
+        margin: 5%;
+        box-sizing: border-box;
+        vertical-align: middle;
+        text-align: center;
+        min-height: 470px;
+    }
+
+    .popup-prod-img img{
+        /* width: 100%; */
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 17%;
+    }
+
+    .prod-cart:first-child {
+        margin-bottom: 40px;
+    }
+
+    .cart-price {
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    .cart-variation-select {
+        margin-bottom: 15px;
+    }a
+
+    .cart-btn {
+        margin-top: 10px;
+    }
+
+    .close {
+        position: absolute;
+        right: -10px;
+        top: -12px;
+        color: #000;
+        background-color: #fff;
+        border-radius: 50%;
+        padding: 4px;
+        border: 1px #ccc;
+        cursor: pointer;
+    }
+
+    .popup-prod-info:before {
+        clear: both;
+        content: "";
+        height: 5px;
+        display: block;
+        background-color: rgb(193, 189, 189);
+    }
+
+    div.cart-variant {
+        vertical-align: middle;
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 5px;
+    }
+
+    span[id*='color-variant'] {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background-color: blue;
+        border:1px solid #555;
+        margin: 0 2px;
+    }
+
+    span#color-variant1 {
+        width: 25px;
+        height: 20px;
+        background-color: green;
+    }
+
+    .prod-btn {
+        padding: 15px 30px;
+        color: #fff;
+        background-color: blue;
+        letter-spacing: 1.0px;
+        border: 0px;
+    }
+
+    .cart-price span {
+        font-size: 450%;
+        font-weight: 100;
+        letter-spacing: 1.5px;
+        display: inline-block;
+        margin-top: -15px;
+    }
+
+    .cart-price sub {
+        vertical-align: top;
+        font-size: smaller
+    }
+
+    .cart-prod-link {
+        margin-top: 10px;
+    }
+
+    .cart-prod-link a {
+        text-decoration: underline;
+        font-size: small;
+    }
+    @media (min-width: 1200px) {
+    }

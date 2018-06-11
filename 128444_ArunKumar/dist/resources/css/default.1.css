@@ -1,0 +1,250 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    color: #555;
+    background-color: #fff;
+    line-height: 1.3em;
+    width: 1140px;
+}
+
+.container {
+    width: 100%;
+    margin: 0px auto;
+}
+
+.container:after {
+    content: ".";
+    clear: both;
+    display: block;
+}
+
+.cls {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+section {
+}
+
+/********************************************************
+*               Section Products
+********************************************************/
+.section-products .container:first-child::after,
+.section-products .container:last-child::after {
+    clear: left;
+    display: block;
+    height: 5px;
+    background-color:#e67e22;
+    content: " ";
+}
+
+.col-head-1 { width: 70%;}
+.col-head-2,
+.col-head-3,
+.col-head-4 { 
+    width: 10%;
+    text-align: center;
+}
+
+
+.col {float: left;}
+
+div[class*='col-head-'] {
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.col-data-1 { 
+    width: 20%;
+    padding: 10px;
+}
+
+.col-data-2 { width: 50%;}
+.col-data-3,
+.col-data-4,
+.col-data-5 { 
+    width: 10%;
+    text-align: center;
+}
+
+.prod-qty {
+    color: #e67e22;
+    border: 1px solid #e67e22;
+    padding: 3px 10px;
+}
+
+.col-data-2,
+.col-data-3, 
+.col-data-4,
+.col-data-5 { 
+    padding: 20px;
+}
+
+sub {
+    vertical-align: top;
+    font-size: xx-small;
+}
+
+.col-data-1 img {
+    width: 100%;
+}
+
+.prod-detail {
+    margin-bottom: 20px;
+}
+
+.prod-detail h4 {
+    text-transform: uppercase;
+}
+
+.data-row::after {
+    clear: left;
+    display: block;
+    height: 1px;
+    background-color:#e67e22;
+    content: " ";
+}
+
+/* ----- LINKS ----- */
+
+a:link,
+a:visited {
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #e67e22;
+    border-bottom: 1px solid #e67e22;
+}
+
+/********************************************************
+*               Section Product Promo & Price
+********************************************************/
+.section-product-price {
+    margin-top: 50px;
+}
+
+.prod-assist {
+    width: 25%; float: left;
+}
+
+.prod-promo-info {
+    width: 75%; float: left;
+}
+
+.prod-assist-info {
+    padding-top: 25px;
+}
+
+.prod-promo-info .label {
+    float: left;
+}
+
+.prod-promo-info .div-action {
+    float: right;
+}
+
+/* .div-action {
+    float: right;
+} */
+
+.promo-cls {
+    padding-bottom: 30px;
+}
+
+.prod-promo:after {
+    clear: both;
+    display: block;
+    height: 5px;
+    background-color:#e67e22;
+    content: "";
+}
+
+.prod-head:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+}
+
+.prod-promo .div-action button {
+    color: #555;
+    background-color: #fff; 
+    padding: 5px 20px;
+}
+
+.prod-promo .div-action button:hover {
+    color: #fff;
+    background-color: #555; 
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.prod-info {
+    padding-top: 15px;
+    clear: both;
+}
+
+input[type=text] {
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+input[type=text]:focus {
+    border: 1px solid #555555;
+}
+
+.prod-head {
+    margin: 10px 0 10px 0;
+}
+
+.prod-head .label,
+.prod-head .div-action {
+    padding: 20px 0 15px 0;
+}
+
+.prod-head p {
+    color: #555;
+    font-size: 80%;
+    letter-spacing: 1.5px;
+}
+
+.prod-est-total:before {
+    clear: both;
+    display: block;
+    height: 1px;
+    background-color:#e67e22;
+    content: "";
+}
+
+.prod-est-total strong,
+.prod-est-total .prod-price {
+    font-weight: bold;
+    font-size: 150%;
+}
+
+.prod-est-total sub {
+    vertical-align: top;
+    font-size: smaller
+}
+
+span[class='col-data-5'] {
+
+}

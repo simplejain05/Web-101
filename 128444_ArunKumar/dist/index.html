@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport1" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product List....</title>
+
+    <!-- <link rel="stylesheet" type="text/css" href="/resources/css/default.css"/> -->
+    <link rel="stylesheet" type="text/css" href="/resources/css/media-q.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="main-nav"></div>
+        </nav>
+    </header>
+
+    <section class="section-products">
+        <div class="container header-row">
+            <div class="col-head-0"><span>YOUR SHOPPING BAG</span></div>
+            <div class="col-head-1"><span id="item">3</span> Items</div>
+            <div class="col-head-2">Size</div>
+            <div class="col-head-3">Qty</div>
+            <div class="col-head-4">Price</div>
+        </div>
+
+        <!-- <div class="container data-row">
+            <div class="col-data-1">
+                <img src="/resources/img/product2.png" alt="Soli Green Cotton Shirt" />
+            </div>
+            <div class="col-data-2">
+                <div class="prod-detail">
+                    <h4>Solid Green Cotton Shirt</h4>
+                    <p>Style #: MS256537</p>
+                    <p>Colour: Blue</p>
+                </div>
+            </div>
+            <div class="col-data-3">S</div>
+            <div class="col-data-4">
+                <span class="prod-qty">1</span>
+            </div>
+            <div class="col-data-5">
+                <sup>$</sup><span class="prod-price">09.00</span>
+            </div>
+            <div class="col-data-6">
+                <a href="#">EDIT</a>
+                <a href="#">X REMOVE</a>
+                <a href="#">SAVE FOR LATER</a>
+            </div>
+        </div> -->
+
+    </section>
+
+    <section class="section-product-price">
+        <div class="container">
+            <div class="prod-assist">
+                <h4>Need help<br/>or have questions?</h4>
+                <p class="prod-assist-info">Call Customer Servie at<br/>1-1800-555-5555</p>
+                <p class="prod-assist-info"><a href="#">Chat with one of<br/>our stttylists</a></p>
+                <p class="prod-assist-info"><a href="#">See return<br/>& exchange policy</a></p>
+            </div>
+
+            <div class="product-price">
+                <div class="prod-promo">
+                    <div class="left-div">ENTER PROMOTION CODE OR GIFT CARD</div>
+                    <div class="right-div">
+                        <input type="text" name="text-promo"/>
+                        <button id="btn-promo">APPLY</button>
+                    </div>
+                </div>
+
+                <div class="prod-info">
+                    <div class="left-div"><span>SUBTOTAL</span></div>
+                    <div class="right-div">
+                        <sup>$</sup><span id="subtotal" class="prod-price">37.00</span>
+                    </div>
+                </div>
+
+                <div class="prod-info">
+                    <div class="left-div">
+                        <span>PROMOTION CODE JF10 APPLIED</span>
+                    </div>
+                    <div class="right-div">
+                        <sup>$</sup><span class="prod-price">0.00</span>
+                    </div>
+                </div>
+    
+                <div class="prod-info">
+                    <div class="left-div">
+                        <span>ESTIMATED SHIPPING*</span>
+                        <p>You quality for free shipping<br/>because your order is over $50*</p>
+                    </div>
+                    <div class="right-div">
+                        <strong>FREE</strong>
+                        <!-- <sub>$</sub><span class="prod-price">114.00</span> -->
+                    </div>
+                </div>        
+
+                <div class="prod-info prod-est-total">
+                    <div class="left-div">
+                        <strong>ESTIMATED TOTAL</strong>
+                        <p>Tax will be applied during checkout</p>
+                    </div>
+                    <div class="right-div">
+                        <sup>$</sup><span id="nettotal" class="prod-price">30.00</span>
+                    </div>
+                </div>
+                <div class="m-prod-cart">
+                    <div class="cart-prod-btn">
+                        <button id="prod-btn" name="prod-btn" class="prod-btn">CHECKOUT</button>
+                    </div>
+                    <div class="continue-shop">
+                        <a href="#">CONTINUE SHOPPING</a>
+                    </div>
+                    <div class="sec-info">
+                        <span>Secure checkout. Shipping is always safe &amp; secure</span>
+                    </div>
+                    <div class="sec-sign-info">
+                        <span><a href="#">SIGN IN</a> to save your cart and have access to your items on mobile, tablet, and desktop</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="containerPopup" style="display:none">
+        <div class="overlayPopup">
+            <div class="close">X</div>
+            <div class="prod-cart">
+                <span class="prod-big-name">PAISLEY JEAN</span>
+                <div class="cart-price">
+                    <sub>$</sub><span>21</span>
+                </div>
+
+                <span class="prod-small-name">PAISLEY</span>
+                <div class="cart-variant">
+                    <span id="color-variant2"></span>
+                    <span id="color-variant3"></span>
+                    <span id="color-variant1"></span>
+                    <span id="color-variant4"></span>
+                </div>
+
+                <div class="cart-variation-select">
+                    <select name="prod-size" id="prod-size">
+                        <option value="0" selected>SIZE</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+
+                    <select name="prod-qty" id="prod-qty">
+                        <option value="1" selected>QTY: 1</option>
+                        <option value="2">QTY: 2</option>
+                        <option value="3">QTY: 3</option>
+                        <option value="4">QTY: 4</option>
+                    </select>
+                </div>
+
+                <button id="prod-btn" name="prod-btn" class="prod-btn">ADD TO BAG</button>
+
+                <div class="cart-prod-link">
+                    <a href="#">See product details</a>
+                </div>
+            </div>
+
+            <div class="popup-prod-img">
+                <img src="/resources/img/product4.png" alt="Product Name"/>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="js/bundle.js"></script></body>
+</html>

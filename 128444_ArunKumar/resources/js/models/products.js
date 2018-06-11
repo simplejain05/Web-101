@@ -1,0 +1,50 @@
+export const data = [
+    {
+        "prodcode":"101",
+        "prodname":"ABC",
+        "prodimg":"/resources/img/product1.png",
+        "prodprice":77.00,
+        "prodsize":"S",
+        "prod-color-variant":"#990000"
+    },
+    {
+        "prodcode":"102",
+        "prodname":"XYZ",
+        "prodimg":"/resources/img/product1.png",
+        "prodprice":77.00,
+        "prodsize":"S",
+        "prod-color-variant":"#990000"
+    },
+    {
+        "prodcode":"103",
+        "prodname":"ABC XYZ",
+        "prodimg":"/resources/img/product1.png",
+        "prodprice":77.00,
+        "prodsize":"S",
+        "prod-color-variant":"#990000"
+    },
+    {
+        "prodcode":"104",
+        "prodname":"XYZ ABC",
+        "prodimg":"/resources/img/product1.png",
+        "prodprice":77.00,
+        "prodsize":"S",
+        "prod-color-variant":"#990000"
+    },
+    {
+        "prodcode":"105",
+        "prodname":"XYZABC",
+        "prodimg":"/resources/img/product1.png",
+        "prodprice":77.00,
+        "prodsize":"S",
+        "prod-color-variant":"#990000"
+    },
+    {
+        "prodcode":"106",
+        "prodname":"ABCXYZ",
+        "prodimg":"/resources/img/product1.png",
+        "prodprice":77.00,
+        "prodsize":"S",
+        "prod-color-variant":"#990000"
+    }
+];
